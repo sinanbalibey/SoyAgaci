@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .about {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="index.html" class="navbar-brand">Soy Ağacı</a>
+        <ul class="navbar-menu">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="index.html">İletişim</a></li>
+            <li><a href="index.html">Giriş Yap</a></li>
+            <li><a href="index.html">Kayıt Ol</a></li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <section class="about">
+        <h1>Hakkımızda</h1>
+        <p>Bu projeyi geliştirme amacım, yazılım alanında kendimi geliştirmek ve yenilikçi teknolojileri kullanarak farklı bir uygulama oluşturmaktır. Bu tür bir uygulamanın halihazırda <strong><a href="https://www.nvi.gov.tr/tek-tikla-soyagaci-sorgulamaa-merkezicerik" target="_blank">e-Devlet</a> </strong>tarafından geliştirildiğinin farkındayım, ancak bu proje benim için bir öğrenme deneyimi olmuştur.</p>
+        <p>Projemde bir <strong><a href="https://en.wikipedia.org/wiki/Binary_tree#:~:text=In%20computer%20science%2C%20a%20binary,ary%20tree%20with%20k%20%3D%202." target="_blank">"Binary Tree"</a></strong>  kullanarak soyağacı yapısı oluşturdum ve bu ağacı görselleştirmek için <strong><a href="https://d3js.org/" target="_blank">d3.js</a></strong> kütüphanesinden faydalandım. Proje kullanıcıdan e-devletden  alınan  <a href="https://www.turkiye.gov.tr/nvi-alt-ust-soy-bilgisi-sorgulama" target="_blank">alt üst soy ağacı belgesini</a> alır verileri işler ve binary treeye ekler. Binary tree yapısında, root kendisi olacak şekilde, sağ tarafa babasınıı, sol tarafa ise annesini ekler. Bu sayede aile yapısını basit ama etkili bir şekilde temsil etmeyi amaçladım.</p>
+        <p>Aşağıda bu yapının bir görselini bulabilirsiniz:</p>
+        <img src="images/familyTree.jpeg" alt="Family Tree" class="family-tree-image">
+        <p>Projeyi Docker Swarm kullanarak kendi VDS sunucumda canlıya aldım. Bu sayede uygulamamın hem geliştirme sürecinde hem de yayınlandığı ortamda verimli bir şekilde çalışmasını sağladım.</p>
+    </section>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
